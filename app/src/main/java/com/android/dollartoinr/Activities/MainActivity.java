@@ -1,4 +1,4 @@
-package com.android.dollartoinr;
+package com.android.dollartoinr.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,27 +6,21 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.android.dollartoinr.Helper.LineChartXAxisValueFormatter;
+import com.android.dollartoinr.R;
 import com.github.mikephil.charting.charts.LineChart;
-import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
-import com.github.mikephil.charting.formatter.IAxisValueFormatter;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Locale;
-import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.Date;
 
@@ -70,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(MainActivity.this,AddDollarValueActivity.class);
+                Intent intent= new Intent(MainActivity.this, AddDollarValueActivity.class);
                 startActivity(intent);
             }
         });

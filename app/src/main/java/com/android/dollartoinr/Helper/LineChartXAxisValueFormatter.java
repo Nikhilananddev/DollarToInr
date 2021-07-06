@@ -1,4 +1,4 @@
-package com.android.dollartoinr;
+package com.android.dollartoinr.Helper;
 
 import android.util.Log;
 

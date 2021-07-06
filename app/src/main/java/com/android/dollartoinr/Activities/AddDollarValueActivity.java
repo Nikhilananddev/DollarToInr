@@ -1,4 +1,4 @@
-package com.android.dollartoinr;
+package com.android.dollartoinr.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.android.dollartoinr.Model.Dollar;
+import com.android.dollartoinr.R;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
