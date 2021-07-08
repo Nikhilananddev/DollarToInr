@@ -11,7 +11,10 @@ public class Dollar {
         this.date = date;
         this.price = price;
     }
+    public Dollar()
+    {
 
+    }
     public String getDate() {
         return date;
     }

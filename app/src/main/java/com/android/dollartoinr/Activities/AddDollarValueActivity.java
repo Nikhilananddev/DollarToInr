@@ -1,5 +1,6 @@
 package com.android.dollartoinr.Activities;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -10,12 +11,18 @@ import android.widget.Toast;
 
 import com.android.dollartoinr.Model.Dollar;
 import com.android.dollartoinr.R;
+import com.github.mikephil.charting.data.Entry;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Map;
 
 public class AddDollarValueActivity extends AppCompatActivity {
     EditText editText;
@@ -50,4 +57,5 @@ DatabaseReference databaseReference=firebaseDatabase.getReference("ChartValue");
 
 
     }
+
 }
