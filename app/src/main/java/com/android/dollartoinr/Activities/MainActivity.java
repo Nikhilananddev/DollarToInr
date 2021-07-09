@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        getData();
+//        getData();
         showData(linechart);
     }
 
@@ -126,13 +126,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showData(List<Entry> entryArrayList) {
-        //        linechart.add(new Entry( seconds("2017-01-01"),65f));
+//                linechart.add(new Entry( seconds("2017-01-01"),65f));
 
 
-        linechart.add(new Entry(linechart.get(0).getX() ,linechart.get(0).getY()));
-//        linechart.add(new Entry( seconds("2019-01-01"),68f));
-//        linechart.add(new Entry( seconds("2020-01-01"),69f));
-//        linechart.add(new Entry( seconds("2021-01-01"),75f));
+//        linechart.add(new Entry(linechart.get(0).getX() ,linechart.get(0).getY()));
+        linechart.add(new Entry( seconds("2019-01-01"),68f));
+        linechart.add(new Entry( seconds("2020-01-01"),69f));
+        linechart.add(new Entry( seconds("2021-01-01"),75f));
+        linechart.add(new Entry( seconds("2021-01-01"),75f));
+        linechart.add(new Entry( seconds("2021-01-01"),75f));
+
 //        getData();
 //                linechart.add(entryArrayList.);
 //        Log.d("MAINACTIVITY", String.valueOf(entryArrayList.size()));
